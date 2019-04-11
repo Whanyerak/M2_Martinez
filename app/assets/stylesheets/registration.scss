@@ -1,0 +1,42 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.content0 {
+	padding-top: 80px;
+	padding-right: 5%;
+	padding-left: 5%;
+	float: left;
+	width: 40%;
+}
+
+.content1 {
+	float: left;
+	margin-left: 10%;
+	margin-top: 5%;
+	width: 50%;
+	height: 100vh;
+	background-image: url(asset-path("auto-ecole.png"));
+	background-size: 80%;
+	background-repeat: no-repeat;
+}
+
+h2 {
+	color: black;
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+#register_button {
+	width: 40%!important;
+	display: block!important;
+	margin-left: 30%!important;
+	margin-top: 5%;
+	color: #FFFFFF;
+	background-color: #26295E;
+
+	&:hover {
+		background-color: pink;
+	}
+}

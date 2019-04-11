@@ -1,0 +1,63 @@
+.header {
+    background-color: black;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    height: 80px;
+    line-height: 80px;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    width: 100%;
+
+    h1 {
+        height: 100%;
+        text-align: left;
+        padding-left: 3%;
+        color: white;
+        font-family: "Lato";
+        text-decoration: none;
+        width: 100%;
+
+        &:hover{
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    .right_top_button {
+        right: 10px;
+    }
+
+    .right_top_button_2 {
+        right: 137px;
+    }
+
+    .right_top_button_3 {
+        right: 154px;
+    }
+
+    .right_top_button_4 {
+        right: 282px;
+    }
+
+    .right_top_button, .right_top_button_2, .right_top_button_3, .right_top_button_4 {
+        font-family: "Lato";
+        color: #FFFFFF;
+        height: 80px;
+        top: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.4s;
+        position: absolute;
+    }
+
+    .right_top_button:hover, .right_top_button_2:hover, .right_top_button_3:hover, .right_top_button_4:hover {
+        background-color: pink;
+    }
+
+}
+
+.header_decallage {
+    height: 80px;
+}

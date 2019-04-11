@@ -1,0 +1,50 @@
+@import "**/*";
+
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "bootstrap";
+
+
+h1 {
+	color: #a54170;
+	text-align: center;
+/*	margin-left: 25%;
+	shape-margin: 25%;*/
+}
+
+body {
+	height: 100%;
+}
+
+#logo {
+	text-align: center;
+	background-repeat: no-repeat;
+	padding-top: 2%;
+}
+
+#registration {
+	width:7%;
+	text-align: center;
+	align: right;
+	background-color: black;
+	border-radius: 10px;
+	background-image: linear-gradient(#ccc6c3 0%, #828c95 24%, #000000 41%, #7f7f7f 100%);
+}
+
+.btn {
+	background-color: black;
+	color: white;
+	border-color: #590908;
+
+	&:hover {
+		background-color: #a54170;
+		color: white;
+	}
+}
+
+.font-weight-normal {
+	font-size: 2vh;
+}
+
+.content_full {
+	margin-top: 2%;
+}

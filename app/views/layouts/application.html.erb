@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>eCommerce</title>
+    <%= csrf_meta_tags %>
+   
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="header_decallage">
+      <div class="header">
+
+      <h1>eCommerce</h1>
+
+      <% if user_signed_in? %>
+
+              <%= link_to "Déconnexion", destroy_session_path(:user), method: :delete, class: 'right_top_button' %>
+
+        <% else %>
+
+              <%= link_to "Connexion", new_user_session_path, class: 'right_top_button_2'%>
+              <%= link_to "Inscription", new_user_registration_path, class: 'right_top_button'%>
+
+        <% end %>
+
+      </div>
+
+  </div>
+
+  <div>
+
+    <% if notice %>
+        <div class="alert alert-success"><%= notice %></div>
+    <% end %>
+    <% if alert %>
+      <div class="alert alert-danger"><%= alert %></div>
+    <% end %>
+
+  </div>
+
+    <%= yield %>
+
+  </body>
+</html>
