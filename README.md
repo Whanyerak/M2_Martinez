@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Partie eCommerce du TP de Nouvelles Technologies de la Répartition.
 
-Things you may want to cover:
+## Groupe 11
+## Valentin MORIN & Guillaume BOUCHEZ
 
-* Ruby version
+### Pour le rapport
 
-* System dependencies
+- Architecture
+- Technos
+- Protocoles implémentés
 
-* Configuration
+### Pour l'examen
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Quelques questions faciles comme :
+	différences entre json et xml
+	différences entre soap et rest 
+	à quoi sert un schema xml
