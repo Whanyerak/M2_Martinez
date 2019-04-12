@@ -12,11 +12,12 @@
     <div class="header_decallage">
       <div class="header">
 
-      <h1>eCommerce</h1>
+      <h1><%= link_to "eCommerce", root_path %></h1>
 
       <% if user_signed_in? %>
 
               <%= link_to "Déconnexion", destroy_session_path(:user), method: :delete, class: 'right_top_button' %>
+              <%= link_to "Mes commandes", commandes_path, class: 'right_top_button_3' %>
 
         <% else %>
 

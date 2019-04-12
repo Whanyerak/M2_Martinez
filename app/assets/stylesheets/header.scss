@@ -1,25 +1,31 @@
 .header {
-    background-color: black;
+    background-color: #0099ff;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-    height: 80px;
-    line-height: 80px;
-    position: fixed;
-    z-index: 10;
+    height: 60px;
+    line-height: 60px;
+    // position: absolute;
     top: 0px;
     width: 100%;
 
     h1 {
-        height: 100%;
+        /*  margin:0;*/
+        font-size: 35px;
+        padding-top: 7px;
+        height: 60px;
         text-align: left;
         padding-left: 3%;
         color: white;
         font-family: "Lato";
         text-decoration: none;
-        width: 100%;
+        width: 50%;
 
-        &:hover{
-            text-decoration: none;
+        a {
             color: white;
+            &:hover{
+                text-decoration: none;
+                color: white;
+                background-color: transparent;
+            }
         }
     }
 
@@ -42,7 +48,7 @@
     .right_top_button, .right_top_button_2, .right_top_button_3, .right_top_button_4 {
         font-family: "Lato";
         color: #FFFFFF;
-        height: 80px;
+        height: 60px;
         top: 0px;
         padding-left: 20px;
         padding-right: 20px;
@@ -53,11 +59,7 @@
     }
 
     .right_top_button:hover, .right_top_button_2:hover, .right_top_button_3:hover, .right_top_button_4:hover {
-        background-color: pink;
+        background-color: #26295E;
     }
 
-}
-
-.header_decallage {
-    height: 80px;
 }

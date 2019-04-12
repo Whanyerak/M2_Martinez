@@ -1,8 +1,25 @@
-<div class="card" style="width: 18rem;">
-  <div class="card-img-top"><%= image_tag "index.jpg", class:"card-img-top" %></div>
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <%= link_to 'Acheter', '/pages_achat', class:"btn btn-default", id:"see_video_button" %>
-  </div>
-</div>
+<% if user_signed_in? %>
+	<div class="reservations_container">
+		<div class="row">
+			<% @produits.each do |produit| %>
+				<div class="card" style="width: 18rem; margin: auto; margin-top: 1%">
+					<div class="card-img-top" alt="Card image cap">
+						<%= image_tag "index.jpg", width: '286px', height: '180px' %>
+					</div>
+					<div class="card-body">
+					    <h5 class="card-title">
+							<%= produit.name %>
+						</h5>
+						<p class="card-text">
+							<%= produit.description %><br><%= produit.prix %>€
+						</p>
+
+						<%= link_to "Acheter", pages_achat_path(:produit_id => produit.id), class: 'btn btn-success' %>
+					</div>
+				</div>
+			<% end %>
+		</div>
+	</div>
+<% else %>
+	<h4>Veuillez vous connecter</h4>
+<% end %>
