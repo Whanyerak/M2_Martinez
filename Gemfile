@@ -61,11 +61,15 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+# Authentication management
 gem 'devise'
 
-gem 'bootstrap', '~> 4.0.0'
+# Design management
+gem "bootstrap", ">= 4.3.1"
 
+# For rails console
 gem 'irb', require: false
 
+# For API rest use
 gem 'rest-client'
 gem 'json'
