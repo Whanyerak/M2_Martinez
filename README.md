@@ -2,7 +2,7 @@
 
 Partie eCommerce du TP de Nouvelles Technologies de la Répartition.
 
-## Groupe 11
+### Groupe 11
 ## Valentin MORIN & Guillaume BOUCHEZ
 
 ### Pour le rapport
